@@ -37,10 +37,8 @@ function toggleFilter() {
 
   if (enabled) {
     applyFilter();
-    toggleButton.textContent = "Show all channels";
   } else {
     clearFilter();
-    toggleButton.textContent = "Show bell channels";
   }
 }
 
@@ -54,6 +52,7 @@ function insertButton() {
   }
 
   if (document.getElementById("yt-bell-filter-chip")) {
+    target.style.display = "flex";
     return true;
   }
 
